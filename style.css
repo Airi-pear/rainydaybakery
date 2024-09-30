@@ -216,6 +216,8 @@ h3, h2 {
     height: 50px;
     z-index: 1;
     display: none;
+    transition: 0.5s;
+      
 }
 .nav-button span {
     width: 36px;
@@ -226,6 +228,11 @@ h3, h2 {
     position: absolute;
     top: 25%;
     left: 7px;
+}
+.menu-open .nav-button{
+  transform: rotate(90deg);
+    transition: 0.5s;
+
 }
 .nav-button span:nth-child(2) {
     top: 45%;
