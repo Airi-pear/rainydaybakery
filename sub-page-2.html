@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+      name="description"
+      content="ベーグルが自慢のパン屋"
+    />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="css/slick.css" rel="stylesheet" type="text/css" />
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<title>Rainy Day Bakery|定休日の変更のお知らせ</title>
+<style></style>
+</head>
+<body id="sub">
+<header>
+    <h1 id="h1"><a href="index.html"><img src="img/logo.png"></a></h1>
+    <nav class="sub-nav">
+        <ul>
+            <a href="index.html">
+            <li>ホーム</li>
+            </a> <a href="index.html#philosophy">
+            <li>こだわり</li>
+            </a> <a href="index.html#news">
+            <li>お知らせ</li>
+            </a> <a href="index.html#special">
+            <li>雨の日特典</li>
+            </a>
+            <a href="index.html#recommend">
+            <li>今月のおすすめ</li>
+            </a>
+            <a href="index.html#store-info">
+            <li>店舗情報</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="nav-button">
+        <span></span>
+    <span></span>
+    <span></span>
+    </div>
+</header>
+<ol class="breadcrumb">
+  <li><a href="index.html">ホーム<span class="dli-chevron-round-right"></span></a></li>
+  <li><a href="news.html">お知らせ一覧<span class="dli-chevron-round-right"></span></a></li>
+  <li class="active">定休日変更のお知らせ</li>
+</ol>
+<div class="container">
+   <figure class="sub-img"><img src="img/newsimg.jpg" width="4841" height="2738" alt=""/></figure>
+    <h2>定休日変更のお知らせ</h2>
+    
+<div class="sub-text">
+    <p>日頃より当店をご利用いただき、誠にありがとうございます。このたび、定休日を変更することとなりましたのでお知らせいたします。</p>
+
+<p>現在の定休日は毎週木曜日ですが、2024年9月より毎週水曜日を定休日とさせていただきます。この変更により、皆様にはより多くの時間帯でご利用いただけるよう努めてまいります。<br>お客様にはご不便をおかけいたしますが、何卒ご理解のほどよろしくお願い申し上げます。</p>
+
+
+<p>ぜひ、変更後の定休日にご注意の上、ご利用いただければ幸いです。</p>
+    </div>
+</div>
+<a href="#h1">
+<div class ="top-button"><img src="img/arrow-up-solid.svg" width="30px" height="auto"></div>
+</a>
+<footer>
+    <p> 2024 Airi-y. All rights reserved.</p>
+</footer>
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script> 
+<script type="text/javascript" src="js/slick.min.js"></script> 
+<script type="text/javascript" src="js/jquery.inview.min.js"></script> 
+<script>
+    //mainのスライド
+  $(function(){
+    $(".mv").slick({
+       autoplay:true,
+       fade:true,
+       speed:1500,
+      autoplaySpeed: 3000,
+      dots:false,
+      pauseOnHover:false,
+      arrows:false,
+
+    });
+  });
+       $(function(){
+     $(".nav-button").on("click",function(){
+       $("body").toggleClass("menu-open");
+     });
+     $(document).on("click",".menu-open nav a",function(){
+       $(".nav-button").trigger("click");
+     });
+   });
+</script>
+</body>
+</html>

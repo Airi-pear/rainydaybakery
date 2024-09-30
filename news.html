@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+      name="description"
+      content="ベーグルが自慢のパン屋"
+    />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="css/slick.css" rel="stylesheet" type="text/css" />
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<title>Rainy Day Bakery|秋の新商品</title>
+<style></style>
+</head>
+<body id="sub">
+<header>
+    <h1 id="h1"><a href="index.html"><img src="img/logo.png"></a></h1>
+    <nav class="sub-nav">
+        <ul>
+            <a href="index.html">
+            <li>ホーム</li>
+            </a> <a href="index.html#philosophy">
+            <li>こだわり</li>
+            </a> <a href="index.html#news">
+            <li>お知らせ</li>
+            </a> <a href="index.html#special">
+            <li>雨の日特典</li>
+            </a> <a href="index.html#recommend">
+            <li>今月のおすすめ</li>
+            </a> <a href="index.html#store-info">
+            <li>店舗情報</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="nav-button"> <span></span> <span></span> <span></span> </div>
+</header>
+<ol class="breadcrumb">
+    <li><a href="index.html">ホーム<span class="dli-chevron-round-right"></span></a></li>
+    <li class="active">お知らせ一覧</li>
+</ol>
+<div class="container">
+    <section class="news" id="news">
+        <h2>お知らせ</h2>
+        <dl>
+            <dt>2024年10月1日<span class="tag">新メニュー</span> </dt>
+            <dd> <a href="sub-page.html">秋の新メニュー「パンプキンベーグル」登場！
+                期間限定で提供いたします。</a> </dd>
+            <dt>2024年8月15日<span class="tag">お知らせ</span></dt>
+            <dd><a href="sub-page-2.html">定休日変更のお知らせ。9月から毎週水曜日が定休日となります。</a> </dd>
+            <dt>2024年8月30日<span class="tag">新メニュー</span></dt>
+            <dd><a href="sub-page-3.html">新しいテイクアウトメニューが追加されました。ぜひご利用ください。</a> </dd>
+            <dt>2024年7月10日<span class="tag">イベント</span></dt>
+            <dd>夏祭り特別イベント開催決定！地元の食材を使ったメニューをお楽しみに。</dd>
+            <dt>2024年6月5日<span class="tag short">新メニュー</span></dt>
+            <dd>「トロピカルフルーツサンド」新登場！爽やかな味わいをお試しください。</dd>
+            <dt>2024年5月1日<span class="tag short">お知らせ</span></dt>
+            <dd>GW期間中の営業時間のお知らせ。特別営業でお待ちしております。</dd>
+            <dt>2024年4月20日<span class="tag">キャンペーン</span></dt>
+            <dd>春のキャンペーン開催中！メニュー注文でスタンプを貯めよう！</dd>
+            <dt>2024年3月15日<span class="tag">お知らせ</span></dt>
+            <dd>新しいポイントカード制度を導入しました。お得な特典をお楽しみください。</dd>
+            <dt>2024年2月10日<span class="tag">新メニュー</span></dt>
+            <dd>「ハート型チョコレートブレッド」バレンタイン限定で販売開始！</dd>
+            <dt>2024年1月5日<span class="tag short">イベント</span></dt>
+            <dd>新年特別イベントを開催します！豪華メニューをぜひお楽しみください。</dd>
+        </dl>
+    </section>
+</div>
+<a href="#h1">
+<div class ="top-button"><img src="img/arrow-up-solid.svg" width="30px" height="auto"></div>
+</a>
+<footer>
+    <p> 2024 Airi-y. All rights reserved.</p>
+</footer>
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script> 
+<script type="text/javascript" src="js/slick.min.js"></script> 
+<script type="text/javascript" src="js/jquery.inview.min.js"></script> 
+<script>
+    //mainのスライド
+  $(function(){
+    $(".mv").slick({
+       autoplay:true,
+       fade:true,
+       speed:1500,
+      autoplaySpeed: 3000,
+      dots:false,
+      pauseOnHover:false,
+      arrows:false,
+
+    });
+  });
+       $(function(){
+     $(".nav-button").on("click",function(){
+       $("body").toggleClass("menu-open");
+     });
+     $(document).on("click",".menu-open nav a",function(){
+       $(".nav-button").trigger("click");
+     });
+   });
+</script>
+</body>
+</html>
