@@ -44,7 +44,7 @@
     <span></span>
     </div>
 </header>
-    <div class="kukan"></div>
+ 
 <div class="top-visual">
     <figure class="mv" id="mv"><img src="img/mv.jpg" alt="パン屋の様子"><img src="img/mv2.jpg" alt="パン屋の様子"><img src="img/mv3.jpg" alt="パン屋の様子"></figure>
     <p class="catch">晴れの日も、雨の日も。<br>
@@ -53,8 +53,8 @@
 <div class="container">
     <section class="about" id="about">
         <h2>天気も気分も、雨が降るから</h2>
-        <p> ごきげんでずっと過ごせるのが理想だけれど、そんな風にはうまくいかない。<br>当店「Rainy Day Bakery」では、毎日変わらずのおいしさで焼きたてのパンを提供しています。<br>
-            雨が降っちゃったから、今日はのんびりお休みしてあのお店に行こうかな　と思ってもらいたい。そして、たべたらなんとなく気分が晴れるような、シンプルなパンから工夫を凝らしたスイーツまで、豊富なラインナップで皆さまをお迎えします。 </p>
+        <p> ごきげんでずっと過ごせるのが理想だけれど、そんな風にはうまくいかない。<br>当店「Rainy Day Bakery」では、毎日変わらずのおいしさで焼きたてのパンを提供しています。</p>
+        <p>雨が降っちゃったから、今日はのんびりお休みしてあのお店に行こうかな　と思ってもらいたい。そして、たべたらなんとなく気分が晴れるような、シンプルなパンから工夫を凝らしたスイーツまで、豊富なラインナップで皆さまをお迎えします。 </p>
         <p> 当店の自慢はずっしりもちもちのベーグル。人気No.
             1の商品です！ぜひお試しください。 </p>
     </section>
@@ -97,6 +97,10 @@
         
         <a href="news.html" class="news-button">すべて見る</a>
     </section>
+       </div>
+    <figure class="pan-slick"><img src="img/pan.png" alt=""/><img src="img/pan2.png" alt=""/><img src="img/pan3.png" alt=""/><img src="img/pan4.png" alt=""/><img src="img/pan5.png" alt=""/><img src="img/pan6.png" alt=""/></figure>
+ 
+    <div class="container">
     <section class="special" id="special">
         <h2>雨の日は特典がいっぱい！</h2>
         <div class="discount">
@@ -182,6 +186,22 @@
       pauseOnHover:false,
       arrows:false,
 
+    });
+  });
+      $(function(){
+    $(".pan-slick").slick({
+       autoplay:true,
+       speed:5000,
+      autoplaySpeed: 0,
+      dots:false,
+      pauseOnHover:false,
+        pauseOnFocus: false,
+      arrows:false,
+        swipe: false,
+        slidesToShow:4,
+        centerMode:true,
+        variableWidth: true,
+cssEase: 'linear',
     });
   });
        $(function(){

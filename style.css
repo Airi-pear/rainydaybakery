@@ -319,7 +319,7 @@ a.news-button {
 	vertical-align: middle;
 	text-decoration: none;
 	width: 120px;
-	margin: 2em auto;
+	margin: 1em auto;
 	padding: 10px 40px;
 	border: 2px solid #254c2b;
 	color: #254c2b;
@@ -329,6 +329,14 @@ a.news-button {
 a.news-button:hover {
 	color: #fff;
 	background: #254c2b;
+}
+.pan-slick{
+    width:100%;
+    margin:30px 0;
+}
+.pan-slick img{
+    width:100px;
+    margin-right: 50px;
 }
 .sub-img{
     width:80%;
@@ -397,8 +405,10 @@ a.news-button:hover {
     .reccomend-flex figure {
         width: 85%;
     }
-   
-   
+
+   .pan-slick{
+    margin:10px 0;
+}
     .philosophy {
         flex-direction: column;
     }
